@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuracion>
+    <!-- BASE DE DATOS -->
+    <!-- configuraciones para el host, puerto, nombre de la base de datos, usuario, y contraseña.-->
+    <base_de_datos>
+        <host>localhost</host>
+        <puerto>3306</puerto>
+        <nombre>BaseDeDatosNM</nombre>
+        <usuario>root</usuario>
+        <contraseña>c0ntraseniaSegura12</contraseña>
+    </base_de_datos>
+    <!-- SERVIDOR WEB-->
+    <!-- parámetros para el puerto de escucha del servidor, habilitación de SSL, rutas a los archivos de clave privada y certificado, el número máximo de conexiones simultáneas permitidas y el tiempo de espera de la conexión-->
+    <servidor_web>
+        <puerto>8080</puerto>
+        <ssl habilitado="true">
+            <clave>path/a/BicipresiBench2029</clave>
+            <certificado>path/a/mi_certificado.crt</certificado>
+        </ssl>
+        <max_conexiones>100</max_conexiones>
+        <timeout>5000</timeout>
+    </servidor_web>
+    <!-- LOGGING-->
+    <!-- -configuración para la creación de archivos de log. Incluye el nivel de log (info, error, debug) y la ruta al archivo donde se almacenarán los logs.-->
+    <configuraciones_adicionales>
+        <modo_debug>activado</modo_debug>
+        <log_direccion>logs/aplicacion.log</log_direccion>
+    </configuraciones_adicionales>
+</configuracion>
